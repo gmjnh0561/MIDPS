@@ -1,0 +1,3 @@
+title=PingPong Time
+author=Buldumac Vasile
+orientation=landscape

@@ -1,0 +1,211 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+}
+body {
+    background: #fff;
+    font-family: "Arial", sans-serif;
+    min-width: 300px;
+    font-size: 15px;
+}
+textarea:focus, input:focus, a:focus {
+    outline: none;
+}
+.change {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    z-index: 1;
+    text-decoration: none;
+    border: 1px solid #607a97;
+    border-radius: 5px;
+    padding: 10px;
+    color: #607a97;
+}
+.top-bar {
+    background: #f9fcfc;
+    border-bottom: 1px solid #e0e2e2;
+    padding: 10px 0;
+    text-align: right;
+    font-size: 28px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.top-bar img, .top-bar span  {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.top-bar span > b {
+    color: #c94d47;
+}
+.chat-window {
+    height: 100%;
+    width: 100%;
+    padding: -80px 0 -130px 0;
+}
+.message-board {
+    width: 100%;
+    position: absolute; 
+    top: 55px; 
+    bottom: 193px;
+}
+.message-board > div {
+    padding: 15px; 
+    height: 100%;
+    overflow-y: auto;
+}
+.chat-window > .chat-body {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+.chat-bar {
+    background: #fff;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #e0e2e2;
+}
+.chat-bar > .smiles {
+    background: #dce4e5;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    padding: 2px 0;
+    bottom: 100%;
+    width: 100%;
+}
+.chat-bar > .smiles > img {
+    display: inline-block;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.chat-bar #message div, .chat-bar #message {
+    display: block;
+    height: 100%;
+}
+.chat-bar #message textarea {
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-height: 120px;
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    padding-left: 135px;
+    position: absolute;
+    right: 120px;
+    box-sizing: border-box;
+}
+.chat-bar #message input[type=button] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background: #dce4e5;
+    border-radius: 0;
+    list-style: none;
+    -webkit-appearance: none;
+}
+span.red {
+    color: #be1919;
+    font-weight: bold;
+}
+span.blue {
+    color: #2461dc;
+    font-weight: bold;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body.index .container {
+    padding: 120px 15px;
+    background: url(../img/monkey-bg.png) no-repeat 0px 120px;
+    min-height: 300px;
+}
+.container-body {
+    padding-left: 390px;
+    font-size: 18px;
+}
+.container-body .page-header {
+    font-size: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #c94d47;
+}
+.container-body p {
+    max-width: 500px;
+}
+a.btn {
+    background: url(../img/btn.png) center center;
+    padding: 15px 50px;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/loading.gif) center center no-repeat;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    body {
+        font-size: 15px;
+    }
+}
+@media (max-width: 720px) {
+    body.index .container {
+        padding: 0 15px;
+        background: none;
+        min-height: normal;
+    }
+    .container-body {
+        padding-left: 0px;
+        padding-top: 80px;
+        font-size: 18px;
+    }
+    .container-body .page-header {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #c94d47;
+    }
+    a.btn {
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .top-bar span {
+        display: none;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.sorry {
+    color: #be1919;
+}
+
+#html img {
+    vertical-align:middle;
+}
